@@ -1,4 +1,4 @@
-$color-link : #FF6060;
+$color-link : #000000;
 $size-link : 1.5rem;
 header{
     display: flex;
@@ -12,6 +12,10 @@ header{
             text-decoration: none;
             color: $color-link;
             font-size: $size-link;
+            font-weight: 500;
         }
     }
 }
+.navbar__link.active {
+    text-decoration: underline;
+  }

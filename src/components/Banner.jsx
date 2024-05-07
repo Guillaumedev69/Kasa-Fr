@@ -4,10 +4,7 @@ import PropTypes from "prop-types";
 const Banner = ({ imageUrl, titleBanner, withOpacity }) => {
   const bannerClassName = `banner ${withOpacity ? "banner__withOpacity" : ""}`;
   return (
-    <div
-      className={bannerClassName}
-      style={{ backgroundImage: `url(${imageUrl})` }}
-    >
+    <div className={bannerClassName} style={{ backgroundImage: `url(${imageUrl})` }}>
       <h1 className="banner__title">{titleBanner}</h1>
     </div>
   );
