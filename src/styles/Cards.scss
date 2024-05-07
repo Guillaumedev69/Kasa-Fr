@@ -2,6 +2,7 @@ $size-title-cards : 1.12rem;
 
 .containerCards{
     display: grid;
+    margin: 0 6.25rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-content: center;
@@ -26,7 +27,6 @@ $size-title-cards : 1.12rem;
         width: 18.75rem;
         color: #FFF;
         font-size: $size-title-cards;
-        font-weight: 500;
         padding: 0 1.25rem;
     }
 }
