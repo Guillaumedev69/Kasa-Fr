@@ -1,0 +1,41 @@
+$size-title-cards : 1.12rem;
+
+.containerCards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    height: 52rem;
+    column-gap: 3.75rem;
+    row-gap: 3.12rem;
+    padding: 3.5rem 3.12rem 2.69rem 3.12rem;
+    border-radius: 1.5625rem;
+    background: #F6F6F6;
+}
+
+.cards{
+    position: relative;
+    display: flex;
+    align-items: end;
+    border-radius: 0.625rem;
+    background-color: #ff6060;
+    width: 21.25rem;
+    height: 21.25rem;
+    .cards__title{
+        z-index: 2;
+        width: 18.75rem;
+        color: #FFF;
+        font-size: $size-title-cards;
+        font-weight: 500;
+        padding: 0 1.25rem;
+    }
+}
+.cards::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
+    border-radius: 0.625rem;
+    width: 21.25rem;
+    height: 21.25rem;
+}
