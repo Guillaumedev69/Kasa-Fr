@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../assets/ImgPlage.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -16,7 +15,7 @@
         font-size: 3rem;
     }
 }
-.banner::before {
+.banner__withOpacity::before {
     content: "";
     position: absolute;
     top: 0;

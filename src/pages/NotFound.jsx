@@ -1,7 +1,13 @@
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import MainNotFound from "../components/MainNotFound";
+
 const NotFound = () => {
   return (
     <div>
-      <h1>Error - 404</h1>
+      <Header />
+      <MainNotFound />
+      <Footer />
     </div>
   );
 };

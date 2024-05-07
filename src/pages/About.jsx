@@ -1,7 +1,14 @@
+import Banner from "../components/Banner";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import ImageBannerAbout from "../assets/ImgMontagne.webp";
+
 const About = () => {
   return (
     <div>
-      <h1>À Propos</h1>
+      <Header />
+      <Banner imageUrl={ImageBannerAbout} withOpacity={false} />
+      <Footer />
     </div>
   );
 };
