@@ -1,0 +1,17 @@
+$color-link : #FF6060;
+$size-link : 1.5rem;
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:3.12rem;
+    .navbar{
+        display: flex;
+        align-items: center;
+        gap: 3.56rem;
+        .navbar__link{
+            text-decoration: none;
+            color: $color-link;
+            font-size: $size-link;
+        }
+    }
+}
