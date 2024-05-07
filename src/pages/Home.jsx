@@ -13,7 +13,14 @@ const Home = () => {
         titleBanner="Chez vous, partout et ailleurs"
         withOpacity={true}
       />
-      <Cards />
+      <div className="containerCards">
+      <Cards cardsTitle="Titre de la location"/>
+      <Cards cardsTitle="Titre de la location"/>
+      <Cards cardsTitle="Titre de la location"/>
+      <Cards cardsTitle="Titre de la location"/>
+      <Cards cardsTitle="Titre de la location"/>
+      <Cards cardsTitle="Titre de la location"/>
+      </div>
       <Footer />
     </div>
   );

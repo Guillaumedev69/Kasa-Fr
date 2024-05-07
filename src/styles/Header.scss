@@ -13,9 +13,9 @@ header{
             color: $color-link;
             font-size: $size-link;
             font-weight: 500;
+            &[data-active="true"]{
+                text-decoration: underline;
+            }
         }
     }
 }
-.navbar__link.active {
-    text-decoration: underline;
-  }
