@@ -1,0 +1,16 @@
+.carrousel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 77.5rem;
+    height: 25.9375rem;
+    .carrousel__btn{
+        width: 2.9175rem;
+        height: 4.95rem;
+        margin: 0 1.46rem;
+    }
+}
