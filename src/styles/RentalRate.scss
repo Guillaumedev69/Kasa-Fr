@@ -1,0 +1,14 @@
+.rate{
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+    width: 12.25rem;
+    height: 2.25rem;
+
+    .color{
+        color: #ff6060;
+    }
+    .grey{
+        color: #e3e3e3;
+    }
+}
