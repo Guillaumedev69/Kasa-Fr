@@ -1,0 +1,18 @@
+.tagContainer{
+    display: flex;
+    gap: 0.62rem;
+    margin-bottom: 1.5rem;
+    .tag{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.625rem;
+        background: #FF6060;
+        width: 7rem;
+        height: 1.5rem;
+        &__text{
+            color: #FFF;
+            font-size: 0.875rem;
+        }
+    }
+}

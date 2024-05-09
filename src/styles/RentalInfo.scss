@@ -1,0 +1,34 @@
+.info{
+    display: flex;
+    flex-direction: column;
+    &__title{
+        margin-top: 1.88rem;
+        color: #FF6060;
+        font-size: 2.25rem;
+        font-weight: 500;
+    }
+    &__firstline{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__adress{
+        margin-bottom: 1.25rem;
+        font-size: 1.125rem;
+        font-weight: 500;
+        font-style: normal;
+    }
+    &__secondline{
+        margin-top: 1.30rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__thirdline{
+        display: flex;
+        gap: 4.75rem;
+        .dropdown__title{
+            font-size: 1.125rem;
+        }
+    }
+
+}

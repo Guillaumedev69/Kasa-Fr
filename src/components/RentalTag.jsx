@@ -1,7 +1,11 @@
 import "../styles/RentalTag.scss";
 import PropTypes from "prop-types";
 const RentalTag = ({ textTag }) => {
-  return <p>{textTag}</p>;
+  return (
+    <div className="tag">
+      <p className="tag__text">{textTag}</p>
+    </div>
+  );
 };
 RentalTag.propTypes = {
   textTag: PropTypes.string.isRequired,

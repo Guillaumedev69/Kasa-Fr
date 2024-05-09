@@ -6,20 +6,24 @@ import RentalHost from "./RentalHost";
 
 const RentalInfo = ({ rentalTitle, rentalAdress, rentalRate }) => {
   return (
-    <div>
-      <h1>{rentalTitle}</h1>
-      <div className="idHost">
-        <RentalHost nameHost="Alexandre Dumas" imgHostUrl="" />
+    <div className="info">
+      <div className="info__firstline">
+      <h1 className="info__title">{rentalTitle}</h1>
+      <RentalHost firstNameHost="Alexandre" nameHost="Dumas" imgHostUrl="" />
       </div>
-      <address>{rentalAdress}</address>
+      <address className="info__adress">{rentalAdress}</address>
+      <div className="info__secondline">
       <div className="tagContainer">
         <RentalTag textTag="Cozy" />
         <RentalTag textTag="Canal" />
         <RentalTag textTag="Paris 10" />
       </div>
       <div className="rate">{rentalRate}</div>
+      </div >
+      <div className="info__thirdline">
       <Dropdown titleDopdrown="Description" />
       <Dropdown titleDopdrown="Équipements" />
+      </div>
     </div>
   );
 };
