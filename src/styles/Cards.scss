@@ -1,5 +1,9 @@
 $size-title-cards : 1.12rem;
-
+@mixin cards-size-style{
+    width: 21.25rem;
+    height: 21.25rem;
+    border-radius: 0.625rem;
+}
 .containerCards{
     display: grid;
     margin: 0 6.25rem;
@@ -7,38 +11,63 @@ $size-title-cards : 1.12rem;
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
     justify-items: center;
-    height: 52rem;
+    height: auto;
     column-gap: 3.75rem;
     row-gap: 3.12rem;
     padding: 3.5rem 3.12rem 2.69rem 3.12rem;
     border-radius: 1.5625rem;
     background: #F6F6F6;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 4px;
+
     .cards{
         position: relative;
         display: flex;
         align-items: end;
-        border-radius: 0.625rem;
-        background-color: #ff6060;
-        width: 21.25rem;
-        height: 21.25rem;
-        .cards__title{
+        @include cards-size-style;
+        &__img{
+            z-index: 1;
+            position: relative;
+            @include cards-size-style;
+        }
+        &__title{
             z-index: 2;
+            position: absolute;
             width: 18.75rem;
             color: #FFF;
             font-size: $size-title-cards;
             padding: 0 1.25rem;
         }
     }
-}
+    .cards::after{
+        content: "";
+        position: absolute;
+        z-index: 1;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
+        @include cards-size-style;
+    }
+    .cards:hover {
+        transform: scale(1.01);
+      }
 
-
-.cards::before{
-    content: "";
-    position: absolute;
-    z-index: 1;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
-    border-radius: 0.625rem;
-    width: 21.25rem;
-    height: 21.25rem;
+    .containerCards__btn{
+       all: unset;
+       grid-column: 1 / -1;
+       display: flex;
+       align-items: center;
+       justify-content: space-around;
+       background: #ff6060;
+       color: #FFF;
+       text-align: center;
+       font-size: 1.125rem;
+       font-weight: 500;
+       border-radius: 1rem;
+       width: 12rem;
+       height: 2rem;
+       cursor: pointer;
+    }
+    .containerCards__btn:active{
+        background-color: #FFF;
+        border: 2px solid #ff6060;
+        color: #ff6060;
+    }
 }

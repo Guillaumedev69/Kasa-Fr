@@ -1,16 +1,30 @@
 import "../styles/Dropdown.scss";
-import BtnDropdown from "../assets/IconBtn.png"
+import BtnDropdown from "../assets/IconBtn.png";
 import PropTypes from "prop-types";
+import { useEffect } from "react";
 
-const Dropdown = ({ titleDopdrown }) => {
+const Dropdown = ({ titleDropdrown }) => {
+  const handleImgClick = () => {
+    alert(`J'aurai € à payer 💸`);
+  };
+
+  useEffect(() => {}, []);
+
   return (
     <div className="dropdown">
-      <h2 className="dropdown__title">{titleDopdrown}</h2>
-      <img className="dropdown__btn" src={BtnDropdown} alt="Bouton pour ouvrir l'onglet" />
+      <h2 className="dropdown__title">{titleDropdrown}</h2>
+      <img
+        className="dropdown__btn"
+        src={BtnDropdown}
+        alt="Bouton pour ouvrir l'onglet"
+        onClick={handleImgClick}
+        />
     </div>
   );
 };
+
 Dropdown.propTypes = {
-  titleDopdrown: PropTypes.string.isRequired,
+  titleDropdrown: PropTypes.string.isRequired,
 };
+
 export default Dropdown;

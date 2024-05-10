@@ -11,7 +11,7 @@ const RentalInfo = ({ rentalTitle, rentalAdress }) => {
     <div className="info">
       <div className="info__firstline">
         <h1 className="info__title">{rentalTitle}</h1>
-        <RentalHost firstNameHost="Alexandre" nameHost="Dumas" imgHostUrl="" />
+        <RentalHost nameHost="Alexandre Dumas" imgHostUrl="" />
       </div>
       <address className="info__adress">{rentalAdress}</address>
       <div className="info__secondline">

@@ -5,15 +5,16 @@ import ImageBannerAbout from "../assets/ImgMontagne.webp";
 import Dropdown from "../components/Dropdown";
 
 const About = () => {
+
   return (
     <div>
       <Header />
       <Banner imageUrl={ImageBannerAbout} withOpacity={false} />
       <section className="dropdownContainer">
-      <Dropdown titleDopdrown="Fiabilité"/>
-      <Dropdown titleDopdrown="Respect"/>
-      <Dropdown titleDopdrown="Service"/>
-      <Dropdown titleDopdrown="Sécurité"/>
+      <Dropdown titleDropdrown="Fiabilité"/>
+      <Dropdown titleDropdrown="Respect"/>
+      <Dropdown titleDropdrown="Service"/>
+      <Dropdown titleDropdrown="Sécurité"/>
       </section>
       <Footer />
     </div>
