@@ -4,8 +4,7 @@ import PropTypes from "prop-types";
 import { useEffect } from "react";
 
 const Dropdown = ({ titleDropdown, contentDropdown }) => {
-  const handleImgClick = () => {
-  };
+  const handleImgClick = () => {};
 
   useEffect(() => {}, []);
 
@@ -18,9 +17,9 @@ const Dropdown = ({ titleDropdown, contentDropdown }) => {
           src={BtnDropdown}
           alt="Bouton pour ouvrir l'onglet"
           onClick={handleImgClick}
-          />
+        />
       </div>
-      <div className="">
+      <div className="dropdown__secondElem">
         <p>{contentDropdown}</p>
       </div>
     </div>

@@ -19,7 +19,7 @@ const Location = () => {
           <>
             <Carrousel />
             <RentalInfo
-              rentalTitle={Data.title}                                                                     
+              rentalTitle={Data.title}
               rentalAdress={Data.location}
               rentalRate={Data.rating}
             />
