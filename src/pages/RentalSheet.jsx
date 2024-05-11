@@ -1,21 +1,30 @@
 import Carrousel from "../components/Carrousel";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import ImgTestCarrousel from "../assets/Background.png";
 import RentalInfo from "../components/RentalInfo";
-import "../styles/RentalSheet.scss"
+import "../styles/RentalSheet.scss";
+import data from "../../public/data.json";
+import { useParams } from "react-router-dom";
 
 const Location = () => {
+  const { id } = useParams();
+
+  const Data = data.find((RentalSheet) => RentalSheet.id === id);
+
   return (
     <div>
       <Header />
       <div className="main">
-        <Carrousel imageUrl={ImgTestCarrousel} />
-        <RentalInfo
-          rentalTitle="Cozy loft on the Canal Saint-Martin"
-          rentalAdress="Paris, Îles-de-France"
-          rentalRate="3 étoiles sur 5"
-        />
+        {Data && (
+          <>
+            <Carrousel />
+            <RentalInfo
+              rentalTitle={Data.title}                                                                     
+              rentalAdress={Data.location}
+              rentalRate={Data.rating}
+            />
+          </>
+        )}
       </div>
       <Footer />
     </div>

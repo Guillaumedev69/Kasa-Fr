@@ -7,6 +7,8 @@ import Cards from "../components/Cards";
 import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+
 
 const Home = () => {
   const [cardsToShow, setCardsToShow] = useState(6);
@@ -25,11 +27,13 @@ const Home = () => {
       />
       <div className="containerCards">
         {data.slice(0, cardsToShow).map((location, index) => (
-          <Cards
-            key={`${location.id}-${index}`}
-            cardsImg={location.cover}
-            cardsTitle={location.title}
-          />
+          <Link key={location.id} to={`/${location.id}`}>
+            <Cards
+              key={`${location.id}-${index}`}
+              cardsImg={location.cover}
+              cardsTitle={location.title}
+            />
+          </Link>
         ))}
 
         {cardsToShow < data.length && (

@@ -6,8 +6,8 @@ const RentalHost = ({ nameHost, imgHostUrl }) => {
       <div className="host__name">
         <p className="nametext">{nameHost}</p>
       </div>
-      <div className="host__img">
-        <img src={`url(${imgHostUrl})`} alt="Photo du loueur" />
+      <div className="host__containerimg">
+        <img className="host__img" src={`${imgHostUrl}`} alt="Photo du loueur" />
       </div>
     </div>
   );

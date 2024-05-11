@@ -3,7 +3,7 @@ import BtnDropdown from "../assets/IconBtn.png";
 import PropTypes from "prop-types";
 import { useEffect } from "react";
 
-const Dropdown = ({ titleDropdrown }) => {
+const Dropdown = ({ titleDropdown }) => {
   const handleImgClick = () => {
     alert(`J'aurai € à payer 💸`);
   };
@@ -12,7 +12,7 @@ const Dropdown = ({ titleDropdrown }) => {
 
   return (
     <div className="dropdown">
-      <h2 className="dropdown__title">{titleDropdrown}</h2>
+      <h2 className="dropdown__title">{titleDropdown}</h2>
       <img
         className="dropdown__btn"
         src={BtnDropdown}
@@ -24,7 +24,7 @@ const Dropdown = ({ titleDropdrown }) => {
 };
 
 Dropdown.propTypes = {
-  titleDropdrown: PropTypes.string.isRequired,
+  titleDropdown: PropTypes.string.isRequired,
 };
 
 export default Dropdown;
