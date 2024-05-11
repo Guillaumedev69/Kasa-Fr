@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../styles/Carrousel.scss";
 import BtnLeft from "../assets/BtnCarrouselLeft.png";
 import BtnRight from "../assets/BtnCarrouselRight.png";

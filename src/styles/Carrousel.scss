@@ -1,28 +1,29 @@
-@mixin carrousel-size{
+@mixin carrousel-size {
     width: 100%;
     height: 28rem;
     border-radius: 1.5rem;
     position: relative;
 }
-.carrousel{
+
+.carrousel {
     @include carrousel-size();
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &__btn{
+    &__btn {
         position: absolute;
         width: 2.9175rem;
         height: 4.95rem;
         margin: 0 1.46rem;
         cursor: pointer;
     }
-    &__btn:active{
+    &__btn:active {
         box-shadow: grey 2px 2px 2px 2px;
     }
-    .btnright{
-        left: 75.5rem;
+    .btnright {
+        right: 0.3rem;
     }
-    &__img{
+    &__img {
         @include carrousel-size();
     }
 }

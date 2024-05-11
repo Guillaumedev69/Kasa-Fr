@@ -25,8 +25,8 @@ const RentalInfo = ({ rentalTitle, rentalAdress }) => {
         <RentalRate rating={Data.rating} />
       </div>
       <div className="info__thirdline">
-        <Dropdown titleDropdown="Description" />
-        <Dropdown titleDropdown="Équipements" />
+        <Dropdown titleDropdown="Description" contentDropdown={Data.description}/>
+        <Dropdown titleDropdown="Équipements" contentDropdown={Data.equipments}/>
       </div>
     </div>
   );
