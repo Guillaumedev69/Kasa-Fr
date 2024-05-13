@@ -1,12 +1,18 @@
 import "../styles/Dropdown.scss";
 import BtnDropdown from "../assets/IconBtn.png";
 import PropTypes from "prop-types";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const Dropdown = ({ titleDropdown, contentDropdown }) => {
-  const handleImgClick = () => {};
+  const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {}, []);
+  const dropdownClick = () => {
+    setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    // Vous pouvez ajouter ici des effets de côté liés à l'ouverture/fermeture du dropdown, si nécessaire
+  }, [isOpen]);
 
   return (
     <div className="dropdown">
@@ -16,12 +22,14 @@ const Dropdown = ({ titleDropdown, contentDropdown }) => {
           className="dropdown__btn"
           src={BtnDropdown}
           alt="Bouton pour ouvrir l'onglet"
-          onClick={handleImgClick}
+          onClick={dropdownClick}
         />
       </div>
-      <div className="dropdown__secondElem">
-        <p>{contentDropdown}</p>
-      </div>
+      {isOpen && (
+        <div className="dropdown__secondElem">
+          <p>{contentDropdown}</p>
+        </div>
+      )}
     </div>
   );
 };

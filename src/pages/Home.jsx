@@ -27,7 +27,7 @@ const Home = () => {
       />
       <div className="containerCards">
         {data.slice(0, cardsToShow).map((location, index) => (
-          <Link key={location.id} to={`/${location.id}`}>
+          <Link key={location.id} to={`/rentalSheet/${location.id}`}>
             <Cards
               key={`${location.id}-${index}`}
               cardsImg={location.cover}
