@@ -27,4 +27,12 @@
         @include carrousel-size();
         object-fit: cover;
     }
+    &__counter{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        color: #FFF;
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
 }

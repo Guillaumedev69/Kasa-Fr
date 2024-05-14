@@ -20,6 +20,7 @@ const Carrousel = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex === pictures.length - 1 ? 0 : prevIndex + 1));
   };
 
+
   return (
     <div className="carrousel">
       <img className="carrousel__img" src={pictures[currentImageIndex]} alt="photo de l'appartement à louer" />
@@ -29,6 +30,7 @@ const Carrousel = () => {
         alt="Bouton du carrousel pour sélectionner l'image précédente"
         onClick={handlePrevClick}
       />
+      <div className="carrousel__counter">{currentImageIndex + 1}/{pictures.length}</div>
       <img
         className="carrousel__btn btnright"
         src={BtnRight}

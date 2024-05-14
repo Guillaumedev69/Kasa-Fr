@@ -31,7 +31,9 @@ const RentalInfo = ({ rentalTitle, rentalAdress }) => {
         />
         <Dropdown
           titleDropdown="Équipements"
-          contentDropdown={Data.equipments}
+          listDropdown={Data.equipments.map((equipment, index) => (
+            <li key={index} className="dropdown__contentList">{equipment}</li>
+          ))}
         />
       </div>
     </div>

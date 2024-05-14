@@ -3,7 +3,7 @@ import BtnDropdown from "../assets/IconBtn.png";
 import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 
-const Dropdown = ({ titleDropdown, contentDropdown }) => {
+const Dropdown = ({ titleDropdown, contentDropdown, listDropdown }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const dropdownClick = () => {
@@ -27,7 +27,10 @@ const Dropdown = ({ titleDropdown, contentDropdown }) => {
       </div>
       {isOpen && (
         <div className="dropdown__secondElem">
-          <p>{contentDropdown}</p>
+          {contentDropdown && (
+            <p className="dropdown__content">{contentDropdown}</p>
+          )}
+          {listDropdown && <ul className="dropdown__list">{listDropdown}</ul>}
         </div>
       )}
     </div>
@@ -37,6 +40,7 @@ const Dropdown = ({ titleDropdown, contentDropdown }) => {
 Dropdown.propTypes = {
   titleDropdown: PropTypes.string.isRequired,
   contentDropdown: PropTypes.string.isRequired,
+  listDropdown: PropTypes.string.isRequired,
 };
 
 export default Dropdown;

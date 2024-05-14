@@ -5,6 +5,8 @@ import RentalInfo from "../components/RentalInfo";
 import "../styles/RentalSheet.scss";
 import data from "../../public/data.json";
 import { useParams } from "react-router-dom";
+import MainNotFound from "../components/MainNotFound"
+
 
 const Location = () => {
   const { id } = useParams();
@@ -15,16 +17,16 @@ const Location = () => {
     <div>
       <Header />
       <div className="main">
-        {Data && (
+        {Data ? (
           <>
             <Carrousel />
             <RentalInfo
-              rentalTitle={Data.title}
+              rentalTitle={Data.title}                                                                     
               rentalAdress={Data.location}
               rentalRate={Data.rating}
             />
           </>
-        )}
+        ) : (<MainNotFound />)}
       </div>
       <Footer />
     </div>
