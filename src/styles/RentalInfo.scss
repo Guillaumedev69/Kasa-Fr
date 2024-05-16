@@ -1,30 +1,65 @@
 .info{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
     &__title{
-        margin-top: 1.88rem;
+        margin: 0;
         color: #FF6060;
         font-size: 2.25rem;
         font-weight: 500;
     }
-    &__firstline{
+    &__infoBox{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        gap: 1.25rem;
     }
     &__adress{
-        margin-bottom: 1.25rem;
         font-size: 1.125rem;
         font-weight: 500;
         font-style: normal;
     }
-    &__secondline{
+    &__hostBox{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    &__dropdownBox{
         display: flex;
         justify-content: space-between;
-    }
-    &__thirdline{
-        display: flex;
+        width: 100%;
         gap: 4.75rem;
     }
 
+}
+
+@media (max-width:426px) {
+    .info{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        &__title{
+            font-size: 1.125rem;
+        }
+        &__adress{
+            font-size: 0.875rem;
+        }
+        &__infoBox{
+            width: 100%;
+            gap: 0.6rem;
+
+        }
+        &__hostBox{
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 6rem;
+            width: 100%;
+
+        }
+        &__dropdownBox{
+        flex-direction: column;
+        gap: 1.25rem;
+        width: 100%;
+        }
+    }
 }

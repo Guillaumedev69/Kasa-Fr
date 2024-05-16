@@ -1,9 +1,12 @@
 $color-link : #000000;
 $size-link : 1.5rem;
+$size-mobile-link : 1rem;
 header{
     display: flex;
     justify-content: space-between;
-    margin: 2.81rem 6.25rem 3.12rem 6.25rem;
+    .header__img{
+        width: 11rem;
+    }
     .navbar{
         display: flex;
         align-items: center;
@@ -15,6 +18,22 @@ header{
             font-weight: 500;
             &[data-active="true"]{
                 text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    header{
+        justify-content: center;
+        gap: 1rem;
+        .header__img{
+            width: 9rem;
+        }
+        .navbar{
+            gap: 1.66rem;
+            .navbar__link{
+                font-size: $size-mobile-link;
             }
         }
     }

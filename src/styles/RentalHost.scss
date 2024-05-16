@@ -9,7 +9,6 @@
         justify-content: space-around;
         gap: 0;
         text-align: end;
-        margin-top: 1.88rem;
         height: 4rem;
         .nametext{
             margin: 0;
@@ -19,10 +18,19 @@
         }
     }
     .host__img{
-        margin-top: 1.55rem;
         width: 4rem;
         height: 4rem;
         border-radius: 50% 50%;
         background-color: #c4c4c4;
+    }
+}
+
+@media (max-width:426px) {
+    .host{
+        .host__name{
+            .nametext{
+                font-size: 1rem;
+            }
+        }
     }
 }

@@ -11,20 +11,22 @@ const RentalInfo = ({ rentalTitle, rentalAdress }) => {
   const Data = data.find((RentalInfo) => RentalInfo.id === id);
   return (
     <div className="info">
-      <div className="info__firstline">
+      <div className="info__infoBox">
+        <div className="info_infoBoxTitleAdress">
         <h1 className="info__title">{rentalTitle}</h1>
-        <RentalHost nameHost={Data.host.name} imgHostUrl={Data.host.picture} />
-      </div>
-      <address className="info__adress">{rentalAdress}</address>
-      <div className="info__secondline">
+        <address className="info__adress">{rentalAdress}</address>
+        </div>
         <div className="tagContainer">
           {Data.tags.map((tag, index) => (
             <RentalTag key={index} textTag={tag} />
           ))}
         </div>
+      </div>
+      <div className="info__hostBox">
+        <RentalHost nameHost={Data.host.name} imgHostUrl={Data.host.picture} />
         <RentalRate rating={Data.rating} />
       </div>
-      <div className="info__thirdline">
+      <div className="info__dropdownBox">
         <Dropdown
           titleDropdown="Description"
           contentDropdown={Data.description}
@@ -32,7 +34,9 @@ const RentalInfo = ({ rentalTitle, rentalAdress }) => {
         <Dropdown
           titleDropdown="Équipements"
           listDropdown={Data.equipments.map((equipment, index) => (
-            <li key={index} className="dropdown__contentList">{equipment}</li>
+            <li key={index} className="dropdown__contentList">
+              {equipment}
+            </li>
           ))}
         />
       </div>

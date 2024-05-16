@@ -8,7 +8,7 @@ const Footer = () => {
         alt="Logo de l'entreprise kasa en noir et blanc"
         className="footer__img"
       />
-      <p className="footer__text"> &copy; 2020 Kasa. All rights reserved</p>
+      <p className="footer__text"> &copy; 2024 Kasa. All rights reserved</p>
     </footer>
   );
 };

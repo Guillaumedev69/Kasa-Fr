@@ -12,3 +12,13 @@
         color: #e3e3e3;
     }
 }
+
+@media (max-width:426px) {
+.rate{
+    justify-content: flex-start;
+    width: 6.5rem;
+    height: 1rem;
+    gap: 0.1rem;
+}
+    
+}
