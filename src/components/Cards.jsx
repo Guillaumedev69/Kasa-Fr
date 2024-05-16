@@ -10,7 +10,7 @@ const Cards = ({ cardsTitle, cardsImg }) => {
         src={cardsImg}
         alt={`aperçu photo de la location : ${cardsTitle}"`}
         className="cards__img"
-        />
+      />
     </div>
   );
 };

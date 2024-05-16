@@ -1,3 +1,5 @@
+$radius-banner: 1.5rem;
+$radius-banner-mobile : 0.625rem;
 .banner {
     width: 100%;
     position: relative;
@@ -8,7 +10,7 @@
     background-position: center;
     background-size: cover;
     height: 14rem;
-    border-radius: 1.5rem;
+    border-radius: $radius-banner;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 4px;
     .banner__title {
         text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
@@ -26,7 +28,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 1.5rem;
+    border-radius: $radius-banner;
 }
 .banner__withOpacity::before {
     content: "";
@@ -36,7 +38,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 1.5rem;
+    border-radius: $radius-banner;
 }
 
 @media (max-width:426px) {
@@ -44,6 +46,7 @@
         width: 20rem;
         height: 7rem;
         justify-content: start;
+        border-radius: $radius-banner-mobile;
         .banner__title {
             margin-left: 1rem;
             font-size: 1.5rem;
@@ -52,5 +55,11 @@
                 display: flex;
             }
         }
+    }
+    .banner::before{
+        border-radius: $radius-banner-mobile;
+    }
+    .banner__withOpacity::before{
+        border-radius: $radius-banner-mobile;
     }
 }

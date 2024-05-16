@@ -1,5 +1,5 @@
 import LogoWhite from "../assets/Logo.webp";
-import "../styles/Footer.scss"
+import "../styles/Footer.scss";
 const Footer = () => {
   return (
     <footer>

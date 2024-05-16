@@ -7,7 +7,11 @@ const RentalHost = ({ nameHost, imgHostUrl }) => {
         <p className="nametext">{nameHost}</p>
       </div>
       <div className="host__containerimg">
-        <img className="host__img" src={`${imgHostUrl}`} alt="Photo du loueur" />
+        <img
+          className="host__img"
+          src={`${imgHostUrl}`}
+          alt="Photo du loueur"
+        />
       </div>
     </div>
   );

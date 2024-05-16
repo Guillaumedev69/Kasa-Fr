@@ -13,8 +13,8 @@ const RentalInfo = ({ rentalTitle, rentalAdress }) => {
     <div className="info">
       <div className="info__infoBox">
         <div className="info_infoBoxTitleAdress">
-        <h1 className="info__title">{rentalTitle}</h1>
-        <address className="info__adress">{rentalAdress}</address>
+          <h1 className="info__title">{rentalTitle}</h1>
+          <address className="info__adress">{rentalAdress}</address>
         </div>
         <div className="tagContainer">
           {Data.tags.map((tag, index) => (

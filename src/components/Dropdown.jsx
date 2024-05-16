@@ -10,9 +10,7 @@ const Dropdown = ({ titleDropdown, contentDropdown, listDropdown }) => {
     setIsOpen(!isOpen);
   };
 
-  useEffect(() => {
-    // Vous pouvez ajouter ici des effets de côté liés à l'ouverture/fermeture du dropdown, si nécessaire
-  }, [isOpen]);
+  useEffect(() => {}, [isOpen]);
 
   return (
     <div className="dropdown">

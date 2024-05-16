@@ -3,13 +3,13 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ImageBannerAbout from "../assets/ImgMontagne.webp";
 import Dropdown from "../components/Dropdown";
-import "../styles/Page.scss"
+import "../styles/Page.scss";
 
 const About = () => {
   return (
     <div className="page">
       <div className="page__header">
-      <Header />
+        <Header />
       </div>
       <div className="page__main">
         <Banner imageUrl={ImageBannerAbout} withOpacity={false} />
@@ -40,7 +40,7 @@ const About = () => {
         </section>
       </div>
       <div className="page__footer">
-      <Footer />
+        <Footer />
       </div>
     </div>
   );

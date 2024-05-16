@@ -16,3 +16,11 @@ footer{
         font-weight: 500;
     }
 }
+
+@media (max-width:426px) {
+    footer{
+        .footer__text{
+            font-size: 0.75rem;
+        }
+    }
+}
