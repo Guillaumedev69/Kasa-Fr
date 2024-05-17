@@ -41,6 +41,13 @@ $radius-banner-mobile : 0.625rem;
     border-radius: $radius-banner;
 }
 
+@media (max-width:769px) {
+    .banner{
+        .banner__title{
+            font-size: 2.2rem;
+        }
+    }
+}
 @media (max-width:426px) {
     .banner{
         width: 20rem;

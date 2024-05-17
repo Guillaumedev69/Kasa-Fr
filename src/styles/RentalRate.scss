@@ -13,6 +13,14 @@
     }
 }
 
+
+@media (max-width: 1025px) {
+    .rate{
+        width: auto;
+    }
+    
+}
+
 @media (max-width:426px) {
 .rate{
     justify-content: flex-start;

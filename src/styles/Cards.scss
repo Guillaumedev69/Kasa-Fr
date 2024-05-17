@@ -74,6 +74,19 @@ $size-title-cards : 1.12rem;
         color: #ff6060;
     }
 }
+
+
+
+@media (max-width: 769px) {
+    .containerCards{
+        .cards{
+            width: auto;
+        }
+    }
+    
+}
+
+
 @media (max-width: 426px){
     .containerCards{
         gap: 1.25rem;

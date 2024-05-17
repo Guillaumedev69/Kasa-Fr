@@ -15,6 +15,14 @@
     }
 }
 
+@media (max-width: 769px) {
+    .page{
+        &__header, &__main{
+            margin: 0 3rem;
+        }
+    }
+    
+}
 
 @media (max-width: 426px) {
     .page{
