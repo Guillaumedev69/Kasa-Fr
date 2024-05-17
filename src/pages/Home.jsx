@@ -39,6 +39,7 @@ const Home = () => {
               />
             </Link>
           ))}
+          <div className="containerCards__containerBtn">
 
           {cardsToShow < data.length && (
             <button className="containerCards__btn" onClick={loadMoreCards}>
@@ -49,6 +50,7 @@ const Home = () => {
           )}
 
           {cardsToShow < data.length}
+          </div>
         </div>
       </div>
       <div className="page__footer">
