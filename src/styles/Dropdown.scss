@@ -70,7 +70,7 @@ $size-padd-text : 1.25rem;
 @media (max-width: 426px) {
     .dropdownContainerAbout{
         gap: 1.25rem;
-        width: 84%;
+        width: 100%;
     }
     .dropdown{
         &__firstElem{

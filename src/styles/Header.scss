@@ -26,12 +26,12 @@ header{
 @media (max-width: 426px) {
     header{
         justify-content: center;
-        gap: 1rem;
+        gap: 1.7rem;
         .header__img{
             width: 9rem;
         }
         .navbar{
-            gap: 1.66rem;
+            gap: 1.7rem;
             .navbar__link{
                 font-size: $size-mobile-link;
             }
