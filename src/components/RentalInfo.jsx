@@ -8,7 +8,10 @@ import RentalRate from "./RentalRate";
 import RentalTag from "./RentalTag";
 const RentalInfo = ({ rentalTitle, rentalAdress }) => {
   const { id } = useParams();
-  const Data = data.find((RentalInfo) => RentalInfo.id === id);
+  const Data = data.find((rental) => rental.id === id);
+  if (!Data) {
+    return <div>Data not found</div>;
+  }
   return (
     <div className="info">
       <div className="info__infoBox">

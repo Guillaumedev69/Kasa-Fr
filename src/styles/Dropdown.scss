@@ -27,11 +27,20 @@ $size-padd-text : 1.25rem;
             margin-right: 1.25rem;
             width: 2rem;
             height: 2rem;
+            transition: all 500ms ;
+        }
+        .dropdown__btn.rotate{
+            transform: rotate(180deg);
         }
     }
     &__secondElem{
+        transform: translateY(-100%);
+        max-height: 0px;
+        opacity: 0;
+        transition: all 0.5s forwards;
         background-color: #F6F6F6;
         border-radius: 0.625rem 0.625rem 0.3125rem 0.3125rem;
+        
         .dropdown__content{
             margin: 0;
             padding: $size-padd-text;
@@ -48,6 +57,13 @@ $size-padd-text : 1.25rem;
             font-size: $size-text;
             font-weight: 400;
         }
+    }
+    &__secondElem.open{
+        position: relative;
+        z-index: -1;
+        background-color: #F6F6F6;
+        border-radius: 0.625rem 0.625rem 0.3125rem 0.3125rem;
+        animation: open 0.5s forwards;
     }
 }
 
@@ -69,3 +85,15 @@ $size-padd-text : 1.25rem;
         }
     }
 }
+@keyframes open {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+      max-height: 0px;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+      max-height: 500px;
+    }
+  }

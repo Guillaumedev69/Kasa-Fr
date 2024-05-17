@@ -12,7 +12,11 @@ const About = () => {
         <Header />
       </div>
       <div className="page__main">
-        <Banner imageUrl={ImageBannerAbout} withOpacity={false} />
+        <Banner
+          imageUrl={ImageBannerAbout}
+          titleBanner=""
+          withOpacity={false}
+        />
         <section className="dropdownContainerAbout">
           <Dropdown
             titleDropdown="Fiabilité"

@@ -25,11 +25,8 @@ const Home = () => {
       <div className="page__main">
         <Banner
           imageUrl={ImageBanner}
-          titleBanner={
-            <p>
-              Chez vous, <span>partout et ailleurs</span>
-            </p>
-          }
+          titleBanner="
+              Chez vous, partout et ailleurs"
           withOpacity={true}
         />
         <div className="containerCards">

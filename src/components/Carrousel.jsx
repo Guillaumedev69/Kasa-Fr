@@ -10,27 +10,31 @@ const Carrousel = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const rentalData = data.find((item) => item.id === id);
-  const pictures = rentalData ? rentalData.pictures : [];
+  const pictures = rentalData && rentalData.pictures ? rentalData.pictures : [];
 
-  const handlePrevClick = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? pictures.length - 1 : prevIndex - 1
+  function handlePrevClick() {
+    setCurrentImageIndex(
+      currentImageIndex === 0 ? pictures.length - 1 : currentImageIndex - 1
     );
-  };
+  }
 
-  const handleNextClick = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === pictures.length - 1 ? 0 : prevIndex + 1
+  function handleNextClick() {
+    setCurrentImageIndex(
+      currentImageIndex === pictures.length - 1 ? 0 : currentImageIndex + 1
     );
-  };
+  }
 
   return (
     <div className="carrousel">
-      <img
-        className="carrousel__img"
-        src={pictures[currentImageIndex]}
-        alt="photo de l'appartement à louer"
-      />
+      {pictures.map((pictures, index) => (
+        <img
+          key={index}
+          className="carrousel__img"
+          src={pictures}
+          alt="photo de l'appartement à louer"
+          style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
+        />
+      ))}
       {pictures.length > 1 && (
         <>
           <img
