@@ -1,3 +1,4 @@
+@import "./styleGlobal.scss";
 .tagContainer{
     display: flex;
     gap: 0.62rem;
@@ -6,12 +7,12 @@
         align-items: center;
         justify-content: center;
         border-radius: 0.625rem;
-        background: #FF6060;
+        background: $color-theme;
         width: auto;
         padding: 0 1rem;
         height: 1.5rem;
         &__text{
-            color: #FFF;
+            color: $color-second-theme;
             font-size: 0.875rem;
         }
     }

@@ -1,10 +1,10 @@
-$color-text : #FF6060;
+@import "./styleGlobal.scss";
 .main404{
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 8.69rem;
-    color: $color-text;
+    color: $color-theme;
     &__title{
         font-size: 18rem;
         font-weight: 700;
@@ -16,7 +16,7 @@ $color-text : #FF6060;
         font-weight: 500;
     }
     &__link{
-        color: #000;
+        color: $color-link;
         font-size: 1.12rem;
         font-weight: 500;
         text-decoration: underline;
@@ -31,7 +31,7 @@ $color-text : #FF6060;
         &__text{
             width: 16.25rem;
             text-align: center;
-            font-size: 1.125rem;
+            font-size: $size-text;
         }
     }
 }

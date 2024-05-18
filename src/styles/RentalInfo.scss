@@ -1,10 +1,11 @@
+@import "./styleGlobal.scss";
 .info{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     &__title{
         margin: 0;
-        color: #FF6060;
+        color: $color-theme;
         font-size: 2.25rem;
         font-weight: 500;
     }
@@ -14,7 +15,7 @@
         gap: 1.25rem;
     }
     &__adress{
-        font-size: 1.125rem;
+        font-size: $size-text;
         font-weight: 500;
         font-style: normal;
     }

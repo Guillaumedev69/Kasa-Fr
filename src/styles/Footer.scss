@@ -1,6 +1,7 @@
+@import "./styleGlobal.scss";
 footer{
     height: 13.0625rem;
-    background-color: #000;
+    background-color: $color_third_theme;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +21,7 @@ footer{
 @media (max-width:426px) {
     footer{
         .footer__text{
-            font-size: 0.75rem;
+            font-size: $size-text-mobile;
         }
     }
 }

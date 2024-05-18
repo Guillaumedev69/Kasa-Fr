@@ -1,6 +1,4 @@
-$color-link : #000000;
-$size-link : 1.5rem;
-$size-mobile-link : 1rem;
+@import "./styleGlobal.scss";
 header{
     display: flex;
     justify-content: space-between;

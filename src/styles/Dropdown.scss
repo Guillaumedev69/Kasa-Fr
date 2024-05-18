@@ -1,6 +1,4 @@
-$size-text : 1.125rem;
-$size-text-mobile : 0.75rem;
-$size-padd-text : 1.25rem;
+@import"./styleGlobal.scss";
 
 .dropdownContainerAbout {
     display: flex;
@@ -20,11 +18,11 @@ $size-padd-text : 1.25rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #ff6060;
+        background-color: $color-theme;
         border-radius: 0.31rem;
         .dropdown__title {
             margin: 0.62rem 0rem 0.62rem 0.94rem;
-            color: #FFF;
+            color: $color-second-theme;
             font-size: 1.5rem;
         }
         .dropdown__btn {
@@ -40,7 +38,7 @@ $size-padd-text : 1.25rem;
     &__secondElem {
         max-height: 0px;
         opacity: 0;
-        background-color: #F6F6F6;
+        background-color: $backgrd-color-contain;
         border-radius: 0.625rem 0.625rem 0.3125rem 0.3125rem;
         overflow: hidden;
         transition: max-height 0.5s ease, opacity 0.5s ease;
@@ -76,7 +74,7 @@ $size-padd-text : 1.25rem;
     .dropdown {
         &__firstElem {
             .dropdown__title {
-                font-size: 0.8rem;
+                font-size: $size-text-mobile;
             }
         }
         &__secondElem {

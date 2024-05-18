@@ -1,8 +1,4 @@
-@mixin carrousel-size {
-    min-width: 100%;
-    height: 28rem;
-    
-}
+@import "./styleGlobal.scss";
 
 .carrousel {
     @include carrousel-size();
@@ -37,7 +33,7 @@
         position: absolute;
         left: 50%;
         top: 90%;
-        color: #FFF;
+        color: $color-second-theme;
         font-size: 1.125rem;
         font-weight: 500;
     }
@@ -46,9 +42,9 @@
 @media (max-width:426px) {
     .carrousel{
         width: 100%;
-        height: 16rem;
+        height: $height-carrousel-mobile;
         &__img{
-            height: 16rem;
+            height: $height-carrousel-mobile;
         }
         &__btn{
             width: 1.5rem;

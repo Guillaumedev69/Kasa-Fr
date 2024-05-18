@@ -1,8 +1,5 @@
-$size-title-cards : 1.12rem;
-@mixin cards-size-style{
-    height: 20rem;
-    border-radius: 0.625rem;
-}
+@import "./styleGlobal.scss";
+
 .containerCards{
     position: relative;
     z-index: 1;
@@ -13,7 +10,7 @@ $size-title-cards : 1.12rem;
     height: auto;
     padding: 3.5rem 3.12rem 2.69rem 5.12rem;
     border-radius: 1.5625rem;
-    background: #F6F6F6;
+    background: $backgrd-color-contain;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 4px;
     .cards{
         position: relative;
@@ -32,7 +29,7 @@ $size-title-cards : 1.12rem;
             z-index: 3;
             position: absolute;
             width: auto;
-            color: #FFF;
+            color: $color-second-theme;
             font-size: $size-title-cards;
             padding: 0 1rem;
         }
@@ -61,10 +58,10 @@ $size-title-cards : 1.12rem;
        display: flex;
        align-items: center;
        justify-content: space-around;
-       background: #ff6060;
-       color: #FFF;
+       background: $color-theme;
+       color: $color-second-theme;
        text-align: center;
-       font-size: 1.125rem;
+       font-size: $size-text;
        font-weight: 500;
        border-radius: 1rem;
        width: 12rem;
@@ -73,9 +70,9 @@ $size-title-cards : 1.12rem;
        cursor: pointer;
     }
     .containerCards__btn:active{
-        background-color: #FFF;
-        border: 2px solid #ff6060;
-        color: #ff6060;
+        background-color: $color-second-theme;
+        border: 2px solid $color-theme;
+        color: $color-theme;
     }
 }
 
