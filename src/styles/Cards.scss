@@ -6,7 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 3.75rem;
+    gap: 6rem;
     height: auto;
     padding: 3.5rem 3.12rem 2.69rem 5.12rem;
     border-radius: 1.5625rem;
@@ -16,7 +16,7 @@
         position: relative;
         display: flex;
         align-items: end;
-        width: 20rem;
+        width: 19rem;
         @include cards-size-style;
         &__img{
             z-index: 1;
